@@ -4,7 +4,8 @@ import plotly.graph_objects as go
 
 # Import data
 
-housing = pd.read_excel('/Users/smiths4/Documents/WhiteHat Training/Objectives work/London Rental Prices/ModelDF.xlsx')
+# housing = pd.read_excel('/Users/smiths4/Documents/WhiteHat Training/Objectives work/London Rental Prices/ModelDF.xlsx')
+housing = pd.read_excel('/ModelDF.xlsx')
 housing = housing.drop(['Unnamed: 0'],axis=1)
 housing
 
