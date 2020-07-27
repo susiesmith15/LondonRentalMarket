@@ -13,7 +13,7 @@ housing
 
 
 
-housing.describe()
+# housing.describe()
 
 
 
@@ -113,7 +113,7 @@ fig_1.update_layout(
                         family='Arial',
                         size=12,
                         color='#7f7f7f'))
-fig_1.show()
+# fig_1.show()
 
 
 
@@ -152,7 +152,7 @@ fig_2.update_layout(
                         family='Arial',
                         size=12,
                         color='#7f7f7f'))
-fig_2.show()
+# fig_2.show()
 
 
 
@@ -190,7 +190,7 @@ fig_3.update_layout(
                         family='Arial',
                         size=12,
                         color='#7f7f7f'))
-fig_3.show()
+# fig_3.show()
 
 
 
@@ -474,7 +474,7 @@ fig_LR.update_layout(
                         family='Arial',
                         size=12,
                         color='#7f7f7f'))
-fig_LR.show()
+# fig_LR.show()
 
 
 
