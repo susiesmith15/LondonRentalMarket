@@ -571,8 +571,9 @@ app.layout = html.Div(style={'backgroundColor': colors['background']},
                             id='corr_values',
                             figure=fig_1
                                 ,style={'width': '80%'
-                                        ,'padding-left':'10%'
-                                        , 'padding-right':'10%'}
+                                        ,'display': 'block'
+                                        ,'margin-left':'auto'
+                                        ,'margin-right': 'auto'}
                                 ),
                           
                         html.Div(children='There is strong linear correlation between house prices and rent prices.'
@@ -591,14 +592,21 @@ app.layout = html.Div(style={'backgroundColor': colors['background']},
                                 html.H3(''),
                                 dcc.Graph(id='fig_2'
                                          ,figure=fig_2
-                                         ,style={'width': '40%','padding-left':'30%', 'padding-right':'5%'})
+                                         ,style={'width': '40%'
+                                                 ,'display': 'block'
+                                                 ,'margin-left':'auto'
+                                                 ,'margin-right': 'auto'})
                             ], className="correlation"),
 
                             html.Div([
                                 html.H3(''),
                                 dcc.Graph(id='fig_3'
                                          ,figure=fig_3
-                                         ,style={'width': '40%','padding-left':'35%', 'padding-right':'0%'})
+                                         ,style={'width': '40%'
+                                                 ,'display': 'block'
+                                                 ,'margin-left':'auto'
+                                                 ,'margin-right': 'auto'
+                                                })
                             ], className="correlation"),
                         ], className="row"
                         
@@ -631,9 +639,13 @@ app.layout = html.Div(style={'backgroundColor': colors['background']},
                                                     'fontWeight': 'bold'
                                                      ,'textAlign':'center'},
                                         style_table={'maxWidth': '70%'
-                                                    ,'padding-left':'22%'},
+                                                    ,'display': 'block'
+                                                    ,'margin-left':'auto'
+                                                    ,'margin-right': 'auto'},
                                         style_data={'whiteSpace': 'normal',
-                                                    'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
+                                                    'minWidth': '180px'
+                                                    , 'width': '180px'
+                                                    , 'maxWidth': '180px',
                                                     'height': 'auto',
                                                     'textAlign':'center'}
                                             ),
@@ -649,15 +661,19 @@ app.layout = html.Div(style={'backgroundColor': colors['background']},
                                         id='coeff_table',
                                         columns=[{"name": i, "id": i} for i in coeffs.columns],
                                         data=coeffs.to_dict('rows'),
-                                        style_header={'backgroundColor': '#8bcdcd',
-                                                    'fontWeight': 'bold'
+                                        style_header={'backgroundColor': '#8bcdcd'
+                                                    ,'fontWeight': 'bold'
                                                      ,'textAlign':'center'},
                                         style_table={'maxWidth': '50%'
-                                                    ,'padding-left':'36%'},
-                                        style_data={'whiteSpace': 'normal',
-                                                    'minWidth': '180px', 'width': '180px', 'maxWidth': '180px',
-                                                    'height': 'auto',
-                                                    'textAlign':'center'}
+                                                    ,'display': 'block'
+                                                    ,'margin-left':'auto'
+                                                    ,'margin-right': 'auto'},
+                                        style_data={'whiteSpace': 'normal'
+                                                    ,'minWidth': '180px'
+                                                    ,'width': '180px'
+                                                    ,'maxWidth': '180px'
+                                                    ,'height': 'auto'
+                                                    ,'textAlign':'center'}
                                             ),
                           
                         html.Div(children='The intercept is the average MeanRent from the training set (1628). We interpret the remaining coefficients as:'
@@ -695,8 +711,9 @@ app.layout = html.Div(style={'backgroundColor': colors['background']},
                             id='fig_LR',
                             figure=fig_LR
                                 ,style={'width': '80%'
-                                        ,'padding-left':'10%'
-                                        , 'padding-right':'10%'
+                                        ,'display': 'block'
+                                        ,'margin-left':'auto'
+                                        ,'margin-right': 'auto'
                                        }
                                 ),                  
                           html.Div(children=RMSE
