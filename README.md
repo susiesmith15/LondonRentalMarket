@@ -10,5 +10,10 @@ Initially used Pandas to create a dataset comprised of London Borough statistics
   6. House Prices
   7. % Social Housing
 
-Using sklearn, to model and predict the rent price of a Borough using the other variables.
-Displaying this visually through Plotly, and Dash.
+Using sklearn, to model and predict the rent price of a Borough using the other variables. Visualising the process with Plotly.
+  - This can be viewed in the Jupyter Notebook file MLRentalMarket-code.
+
+Displaying this visually in a Dash app. This was deployed through Heroku using:
+  - The python code in app.py,
+  - The procfile
+  - The requirements.txt
