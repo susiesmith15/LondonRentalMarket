@@ -549,10 +549,7 @@ colors = {
     'text': '#114B5F'
 }
 
-app.layout = html.Div(style={'backgroundColor': colors['background']
-                            ,'display': 'block'
-                                        ,'margin-left':'auto'
-                                        ,'margin-right': 'auto'},
+app.layout = html.Div(style={'backgroundColor': colors['background']},
                       children=[
                         html.H1(children='London Rental Price Model'
                                 ,style={'textAlign':'center'
@@ -574,10 +571,9 @@ app.layout = html.Div(style={'backgroundColor': colors['background']
                             id='corr_values',
                             figure=fig_1
                                 ,style={'width': '80%'
-#                                         ,'display': 'block'
-#                                         ,'margin-left':'auto'
-#                                         ,'margin-right': 'auto'
-                                       }
+                                        ,'display': 'block'
+                                        ,'margin-left':'auto'
+                                        ,'margin-right': 'auto'}
                                 ),
                           
                         html.Div(children='There is strong linear correlation between house prices and rent prices.'
@@ -597,19 +593,18 @@ app.layout = html.Div(style={'backgroundColor': colors['background']
                                 dcc.Graph(id='fig_2'
                                          ,figure=fig_2
                                          ,style={'width': '40%'
-#                                                  ,'display': 'block'
-#                                                  ,'margin-left':'auto'
-#                                                  ,'margin-right': 'auto'
-                                                })
+                                                 ,'display': 'block'
+                                                 ,'margin-left':'auto'
+                                                 ,'margin-right': 'auto'})
                             ], className="correlation"),
                         html.Div([
                                 html.H3(''),
                                 dcc.Graph(id='fig_3'
                                          ,figure=fig_3
                                          ,style={'width': '40%'
-#                                                  ,'display': 'block'
-#                                                  ,'margin-left':'auto'
-#                                                  ,'margin-right': 'auto'
+                                                 ,'display': 'block'
+                                                 ,'margin-left':'auto'
+                                                 ,'margin-right': 'auto'
                                                 })
                             ], className="correlation"),
                         ], className="row"
@@ -643,14 +638,13 @@ app.layout = html.Div(style={'backgroundColor': colors['background']
                                                     'fontWeight': 'bold'
                                                      ,'textAlign':'center'},
                                         style_table={'maxWidth': '70%'
-#                                                     ,'display': 'block'
-#                                                     ,'margin-left':'auto'
-#                                                     ,'margin-right': 'auto'
-                                                    },
+                                                    ,'display': 'block'
+                                                    ,'margin-left':'auto'
+                                                    ,'margin-right': 'auto'},
                                         style_data={'whiteSpace': 'normal',
                                                     'minWidth': '180px'
-                                                    , 'width': '180px'
-                                                    , 'maxWidth': '180px',
+                                                    ,'width': '180px'
+                                                    ,'maxWidth': '180px',
                                                     'height': 'auto',
                                                     'textAlign':'center'}
                                             ),
@@ -669,11 +663,10 @@ app.layout = html.Div(style={'backgroundColor': colors['background']
                                         style_header={'backgroundColor': '#8bcdcd'
                                                     ,'fontWeight': 'bold'
                                                      ,'textAlign':'center'},
-                                        style_table={'maxWidth': '50%'
-#                                                     ,'display': 'block'
-#                                                     ,'margin-left':'auto'
-#                                                     ,'margin-right': 'auto'
-                                                    },
+                                        style_table={'maxWidth': '40%'
+                                                    ,'display': 'block'
+                                                    ,'margin-left':'auto'
+                                                    ,'margin-right': 'auto'},
                                         style_data={'whiteSpace': 'normal'
                                                     ,'minWidth': '180px'
                                                     ,'width': '180px'
@@ -717,9 +710,9 @@ app.layout = html.Div(style={'backgroundColor': colors['background']
                             id='fig_LR',
                             figure=fig_LR
                                 ,style={'width': '80%'
-#                                         ,'display': 'block'
-#                                         ,'margin-left':'auto'
-#                                         ,'margin-right': 'auto'
+                                        ,'display': 'block'
+                                        ,'margin-left':'auto'
+                                        ,'margin-right': 'auto'
                                        }
                                 ),                  
                           html.Div(children=RMSE
