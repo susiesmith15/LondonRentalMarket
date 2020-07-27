@@ -17,3 +17,5 @@ Displaying this visually in a Dash app. This was deployed through Heroku using:
   - The python code in app.py,
   - The procfile
   - The requirements.txt
+  
+Medium article documenting process: https://medium.com/@susannahsmith96/machine-learning-london-rental-prices-bbddca2ae1f8
