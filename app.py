@@ -21,10 +21,10 @@ housing.describe()
 
 # Create histogram bins of all variables to see spread of values
 
-get_ipython().run_line_magic('matplotlib', 'inline')
-import matplotlib.pyplot as plt
-housing.hist(bins=10, figsize=(20,15))
-plt.show()
+# get_ipython().run_line_magic('matplotlib', 'inline')
+# import matplotlib.pyplot as plt
+# housing.hist(bins=10, figsize=(20,15))
+# plt.show()
 
 # Notice hows:
 # 1) Values have different scales! May require adjusting
