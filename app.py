@@ -741,5 +741,5 @@ app.layout = html.Div(style={'backgroundColor': colors['background']},
 
 app.css.append_css({
     'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'})
-app.run_server(debug=False)
+app.run_server(host='0.0.0.0')
 
