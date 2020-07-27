@@ -1,1 +1,1 @@
-web: gunicorn app: gettingstarted.py
+web: gunicorn app: app.py
